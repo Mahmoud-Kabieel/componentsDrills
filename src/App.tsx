@@ -1,11 +1,9 @@
 import "./App.css";
-import Badge from "./components/Badge";
-
+import PriceTag from "./components/PriceTag";
 function App() {
   return (
     <div className="bg-cyan-500">
-      <Badge status="success" label="Hello" />
-      <Badge status="warning" />
+      <PriceTag amount={1000} currency="USD" discount={25} />
     </div>
   );
 }
